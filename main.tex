@@ -1,0 +1,194 @@
+%-------------------------
+% Resume in Latex
+% Author : Laksith Prabu
+% Based off of: https://github.com/jakegut/resume
+% License : MIT
+% Found from: https://github.com/rizhu/Resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeItemBF}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \emph{#2} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.05in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Laksith Prabu} \\ \vspace{1pt}
+    \small +1 (510) 365-8851$|$ \href{mailto:laksith@berkeley.edu}{\underline{laksith@berkeley.edu}} $|$ \href{https://laksith.dev/}{\underline{laksith.dev/}} $|$
+    \href{https://github.com/laksith19/}{\underline{github.com/laksith19/}}
+\end{center}
+\vspace{-15pt}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+
+\resumeSubHeadingListStart
+    \resumeSubheading
+        {University of California, Berkeley}{}{B.A. Computer Science}{May 2025}
+        \resumeItemListStart
+            \resumeItemBF{Courses}{Combinatorial Algorithms \& Data Structures (Graduate), Randomized Algorithms, Computability \& Complexity Theory, Programming Languages \& Compilers, Machine Learning, Data Science, Operating Systems, Security, Computer Architecture, Probability \& Stochastic Processes, Linear Algebra, Discrete Math, Signals, Circuits}
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+
+\resumeSubHeadingListStart
+
+\resumeSubheading
+    {UC Berkeley EECS Department}{Berkeley, CA}{Lecturer – CS 61B Data Structures And Algorithms}{June 2023 – August 2023}
+    \resumeItemListStart
+        \resumeItem{Gave lectures, wrote exams, and hired staff of \textbf{25+} TAs/tutors and \textbf{50+} academic interns for class of \textbf{400+} students}
+        \resumeItem{Taught ... put stuff in here}
+    \resumeItemListEnd
+
+\resumeSubheading
+    {UC Berkeley EECS Department}{Berkeley, CA}{Teaching Assistant – CS 61B Data Structures And Algorithms}{June 2022 – May 2023}
+    \resumeItemListStart
+            \resumeItem{cool words}
+    \resumeItemListEnd
+
+\resumeSubheading
+    {Open Computing Facility}{Berkeley, CA}{Head Facilitator – Linux System Administration Decal}{2022}
+    \resumeItemListStart
+            \resumeItem{cool words}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+
+\resumeSubHeadingListStart
+
+    \resumeProjectHeading
+    {\textbf{First}}{}
+    \resumeItemListStart
+            \resumeItem{cool words}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\textbf{Second}}{}
+        \resumeItemListStart
+            \resumeItem{cool words}
+        \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------SKILLS-----------
+\section{Skills}
+
+\resumeSubHeadingListStart
+
+    \resumeProjectHeading
+    {\textbf{Languages}: Python, Java, C, SQL, Go, JavaScript, TypeScript, OCaml, LaTeX, Assembly, Lisp, HTML/CSS}{}
+    \resumeProjectHeading
+    {\textbf{Tools \& Frameworks}: Git, AWS, GCP, Unix, Linux, Docker, Heroku, MongoDB, InfluxDB, React, Vue, Express, Flask, \\ Django, pandas, NumPy, PyTorch, MatPlot}{}
+\resumeSubHeadingListEnd
+
+\end{document}
