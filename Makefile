@@ -17,4 +17,5 @@ copy:
 
 clean:
 	rm -f *.aux *.log *.out *.pdf *.toc
+	rm -rf build/
 
